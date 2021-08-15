@@ -9,7 +9,7 @@ Aug. 2021. first commit
 ----
 데이터사이언스 프로젝트로 진행했던 서울시 초미세먼지 농도 예측 모델을 배포합니다. [DS project repo](https://github.com/jonas-jun/DS_air_quality)   
 
-no2, co, so2, 현재의 pm2.5 농도는 https://cleanair.seoul.go.kr/airquality/localAvg에서 확인할 수 있습니다.
+no2, co, so2, 현재의 pm2.5 농도는 [서울시 대기질 안내페이지](https://cleanair.seoul.go.kr/airquality/localAvg)에서 확인할 수 있습니다.
 - --no2: 현재의 이산화질소(NO2) 농도입니다.
 - --co: 현재의 일산화탄소(CO) 농도입니다.
 - --so2: 현재의 아황산가스(SO2) 농도입니다.
