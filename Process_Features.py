@@ -9,9 +9,7 @@ def load_distribution(file):
     return result
 
 def fill_false(sample, dist):
-    '''
-    need global variables
-    '''
+    
     keys = list(dist.keys())
     for i in range(len(keys)):
         if not sample[i]:
