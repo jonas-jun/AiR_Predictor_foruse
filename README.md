@@ -1,8 +1,11 @@
 # AiR_Predictor_foruse
+
 3시간 후 서울의 초미세먼지 농도를 예측하는 모델을 배포합니다
 ----
+  
 Aug. 2021. first commit  
 code by Junmay  
+  
 ----
 데이터사이언스 프로젝트로 진행했던 서울시 초미세먼지 농도 예측 모델을 배포합니다. [DS project repo](https://github.com/jonas-jun/DS_air_quality)   
 
