@@ -60,30 +60,8 @@ if __name__ == '__main__':
     ====================
     AiR Predictor has been run.
     code by Junmay
-    https://github.com/jonas-jun
+    https://github.com/jonas-jun/AiR_Predictor_foruse
     ====================
     '''
     print(welcome)
-
-    intro = '''
-    입력할 txt 데이터의 형태는 아래와 같습니다.
-    no2, co, so2, 현재의 pm2.5 농도는 https://cleanair.seoul.go.kr/airquality/localAvg에서 확인할 수 있습니다.
-    --no2: 현재의 이산화질소(NO2) 농도입니다.
-    --co: 현재의 일산화탄소(CO) 농도입니다.
-    --so2: 현재의 아황산가스(SO2) 농도입니다.
-    --pm25: 현재의 초미세먼지(pm2.5) 농도입니다.
-    --temp: 3시간 후의 예상 기온입니다.
-    --cloud: 3시간 후의 예상 구름의 양입니다. (퍼센트 단위의 숫자)
-    --amount: 3시간 후의 예상 강수량입니다.
-    --press: 3시간 후의 기압입니다. 대부분 1000~1100의 숫자가 나옵니다.
-    --ws: 3시간 후의 예상 풍속입니다 (m/s단위)
-    --gust: 3시간 후의 예상 돌풍속도입니다. (m/s단위)
-    --wd: 3시간 후의 예상 풍향(Wind Direction)입니다. 북서: 'NW', 서북서: 'WNW', 2개 단위일 때 남북+동서 형태, 한글 표현 그대로 대소문자 구분 없이 입력해주세요.
-    --overall: 3시간 후의 전체적인 날씨입니다. 비나 눈이 오는 등 강수가 있으면 1, 그렇지 않으면 0 입니다.
-    
-    - 결측값이 있다면 2008-2018 기간의 평균치로 계산됩니다.
-    - 다만 Categorical 데이터인 전체적인 날씨와 풍향은 꼭 입력해주세요. 평균치가 없습니다.
-    '''
-    print(intro)
-
     main()
