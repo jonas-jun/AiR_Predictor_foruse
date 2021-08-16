@@ -38,6 +38,9 @@ def cat_overall(val):
 def mps_to_mph(spd):
     return float(spd*3600*0.000621)
 
+def outlier(val, maximum):
+    return max(val, maximum)
+
 def process(sample, dist):
     keys = list(dist.keys())
     standard = [0,1,2,7] # standardization idx: NO2, CO, SO2, pressure
@@ -48,8 +51,8 @@ def process(sample, dist):
         sample[11] = cat_overall(sample[11])
     # 풍향 변환
     sample[10] = encode_wind(cat_wind(sample[10]))    
-    # 풍속 변환, 8,9
-    sample[8] = mps_to_mph(sample[8])
-    sample[9] = mps_to_mph(sample[9])
+    # 풍속 변환, 8,9 wind_speed, gust
+    sample[8] = outlier(mps_to_mph(sample[8]), 20)
+    sample[9] = outlier(mps_to_mph(sample[9]), 30)
     return sample
 

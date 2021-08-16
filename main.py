@@ -1,6 +1,8 @@
 from Process_Features import *
 import joblib
 import argparse
+import warnings
+warnings.filterwarnings(action='ignore')
 
 def main():
     parser = argparse.ArgumentParser()
@@ -51,8 +53,6 @@ def main():
         print('초미세먼지용 마스크까지는 필요하지 않습니다')
     
     return
-
-
 
 if __name__ == '__main__':
     
