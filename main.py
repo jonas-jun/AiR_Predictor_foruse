@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 from Process_Features import *
 import joblib
 import argparse
@@ -12,7 +14,7 @@ def main():
     parser.add_argument('--pm25', type=float, default=False)
     parser.add_argument('--temp', type=float, default=False)
     parser.add_argument('--cloud', type=float, default=False)
-    parser.add_argument('--amount', type=float, default=False) # 강수량 precipitation
+    parser.add_argument('--amount', type=float, default=False) # precipitation 강수량
     parser.add_argument('--press', type=float, default=False)
     parser.add_argument('--ws', type=float, default=False)
     parser.add_argument('--gust', type=float, default=False)
