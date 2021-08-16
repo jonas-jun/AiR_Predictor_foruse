@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 def load_distribution(file):
     result = dict()
     with open(file, 'r') as f:
