@@ -3,7 +3,6 @@
 3시간 후 서울의 초미세먼지 단계를 예측하는 모델을 배포합니다
 ----
 ## contents
-code by Junmay
 - main.py: 모델을 실행합니다. 주요 파라미터들에 대한 설명은 아래를 참고해주세요.
 - AiR_Predictor_RF.pkl: Random Forest에 sampling weight를 주어서 학습시킨 모델입니다. 자세한 내용은 아래 DS project repo.를 참고해주세요.
 - Process_Features.py: 데이터 전처리를 위한 함수들이 포함되어 있습니다.
